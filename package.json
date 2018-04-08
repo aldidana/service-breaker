@@ -1,6 +1,6 @@
 {
   "name": "service-breaker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Circuit breaker",
   "main": "service-breaker.js",
   "scripts": {

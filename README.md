@@ -11,7 +11,7 @@ $ npm install service-breaker
 ## Usage
 
 ```js
-const ServiceBreaker = require('../index')
+const ServiceBreaker = require('service-breaker')
 const stores = {
 	services: {
 		transaction: {
