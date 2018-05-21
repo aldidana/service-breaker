@@ -1,10 +1,10 @@
 {
   "name": "service-breaker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Circuit breaker",
   "main": "service-breaker.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/aldidana/service-breaker/issues"
   },
-  "homepage": "https://github.com/aldidana/service-breaker#readme"
+  "homepage": "https://github.com/aldidana/service-breaker#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
 }

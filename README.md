@@ -12,21 +12,12 @@ $ npm install service-breaker
 
 ```js
 const ServiceBreaker = require('service-breaker')
-const stores = {
-	services: {
-		transaction: {
-			retry: 0,
-			state: 'closed'
-		},
-		auth: {
-			retry: 0,
-			state: 'open'
-		}
-	}
+const config = {
+	services: ['transaction', 'auth']
 }
 
 const serviceBreaker = new ServiceBreaker({
-	stores,
+	config,
 	timeoutDuration: 50000, // default 100000
 	maxFailures: 5 // default 10
 })
@@ -62,7 +53,7 @@ function fallback(params) {
 
 ### `new ServiceBreaker`
 
-ServiceBreaker([stores, timeoutDuration, maxFailures])
+ServiceBreaker([config, timeoutDuration, maxFailures])
 
 ### `invoke`
 
